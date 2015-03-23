@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>189</x>
+      <y>288</y>
+      <w>108</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Employee
+
+--
+fname
+lname
+email
+phone
+cpr
+password
+tokens
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>522</x>
+      <y>270</y>
+      <w>153</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Booking
+--
+b_id
+date
+status
+total</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1035</x>
+      <y>297</y>
+      <w>126</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Ticket
+--
+barcode
+inStock
+t_type
+price</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>783</x>
+      <y>297</y>
+      <w>153</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>BookingLine
+--
+quantity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>909</x>
+      <y>297</y>
+      <w>143</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=1
+</panel_attributes>
+    <additional_attributes>27;27;126;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>270</x>
+      <y>279</y>
+      <w>269</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*
+makes&gt;
+
+</panel_attributes>
+    <additional_attributes>27;45;252;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1350</x>
+      <y>684</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>TicketType
+--
+tt_id
+description
+price
+amount</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1278</x>
+      <y>297</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+e_id
+description
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1269</x>
+      <y>504</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Statistics
+--
+ticketsSold
+bookingsNo
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1395</x>
+      <y>738</y>
+      <w>44</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>27;27;27;108</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1233</x>
+      <y>756</y>
+      <w>44</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1134</x>
+      <y>297</y>
+      <w>161</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>144;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>648</x>
+      <y>297</y>
+      <w>152</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>27;27;135;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>567</x>
+      <y>333</y>
+      <w>44</w>
+      <h>179</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=1</panel_attributes>
+    <additional_attributes>27;27;27;162</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>540</x>
+      <y>495</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Receipt
+
+
+--
+receiptNo
+
+Rdate
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1305</x>
+      <y>333</y>
+      <w>44</w>
+      <h>188</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+m1=   1
+m2=  1</panel_attributes>
+    <additional_attributes>27;171;27;27</additional_attributes>
+  </element>
+</diagram>
