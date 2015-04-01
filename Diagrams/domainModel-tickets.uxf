@@ -4,10 +4,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>0</x>
-      <y>126</y>
+      <x>135</x>
+      <y>45</y>
       <w>108</w>
-      <h>135</h>
+      <h>144</h>
     </coordinates>
     <panel_attributes>Employee
 
@@ -19,14 +19,15 @@ phone
 cpr
 password
 tokens
+isManager
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>333</x>
-      <y>108</y>
+      <x>468</x>
+      <y>27</y>
       <w>153</w>
       <h>90</h>
     </coordinates>
@@ -41,8 +42,8 @@ total</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>846</x>
-      <y>135</y>
+      <x>981</x>
+      <y>54</y>
       <w>126</w>
       <h>90</h>
     </coordinates>
@@ -57,8 +58,8 @@ price</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>594</x>
-      <y>135</y>
+      <x>729</x>
+      <y>54</y>
       <w>153</w>
       <h>63</h>
     </coordinates>
@@ -70,8 +71,8 @@ quantity</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>720</x>
-      <y>135</y>
+      <x>855</x>
+      <y>54</y>
       <w>143</w>
       <h>44</h>
     </coordinates>
@@ -84,8 +85,8 @@ m2=1
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>81</x>
-      <y>117</y>
+      <x>216</x>
+      <y>36</y>
       <w>269</w>
       <h>63</h>
     </coordinates>
@@ -100,8 +101,8 @@ makes&gt;
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1161</x>
-      <y>522</y>
+      <x>1296</x>
+      <y>441</y>
       <w>144</w>
       <h>81</h>
     </coordinates>
@@ -116,8 +117,8 @@ amount</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1089</x>
-      <y>135</y>
+      <x>1224</x>
+      <y>54</y>
       <w>117</w>
       <h>72</h>
     </coordinates>
@@ -132,8 +133,8 @@ name
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1080</x>
-      <y>342</y>
+      <x>1215</x>
+      <y>261</y>
       <w>126</w>
       <h>81</h>
     </coordinates>
@@ -148,8 +149,8 @@ bookingsNo
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1206</x>
-      <y>576</y>
+      <x>1341</x>
+      <y>495</y>
       <w>44</w>
       <h>125</h>
     </coordinates>
@@ -161,8 +162,8 @@ m2=1..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1044</x>
-      <y>594</y>
+      <x>1179</x>
+      <y>513</y>
       <w>44</w>
       <h>80</h>
     </coordinates>
@@ -174,8 +175,8 @@ m2=1..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>945</x>
-      <y>135</y>
+      <x>1080</x>
+      <y>54</y>
       <w>161</w>
       <h>44</h>
     </coordinates>
@@ -187,8 +188,8 @@ m2=1..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>459</x>
-      <y>135</y>
+      <x>594</x>
+      <y>54</y>
       <w>152</w>
       <h>44</h>
     </coordinates>
@@ -200,8 +201,8 @@ m2=1..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>378</x>
-      <y>171</y>
+      <x>513</x>
+      <y>90</y>
       <w>44</w>
       <h>179</h>
     </coordinates>
@@ -213,8 +214,8 @@ m2=1</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>351</x>
-      <y>333</y>
+      <x>486</x>
+      <y>252</y>
       <w>108</w>
       <h>63</h>
     </coordinates>
@@ -231,8 +232,8 @@ Rdate
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1116</x>
-      <y>180</y>
+      <x>1251</x>
+      <y>99</y>
       <w>44</w>
       <h>179</h>
     </coordinates>
