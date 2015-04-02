@@ -152,7 +152,7 @@
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>b_id
+    <panel_attributes>bid
 - - - -</panel_attributes>
     <additional_attributes/>
   </element>
@@ -164,7 +164,7 @@
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>t_id
+    <panel_attributes>tid
 - - - - </panel_attributes>
     <additional_attributes/>
   </element>
@@ -242,7 +242,7 @@
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>e_id</panel_attributes>
+    <panel_attributes>eid</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -253,29 +253,29 @@
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>_ t_id  _</panel_attributes>
+    <panel_attributes>_ tid  _</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>940</x>
+      <x>850</x>
       <y>140</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>_ e_id _</panel_attributes>
+    <panel_attributes>_ eid _</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1040</x>
+      <x>950</x>
       <y>140</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>description</panel_attributes>
+    <panel_attributes>name</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -292,7 +292,7 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>950</x>
+      <x>860</x>
       <y>140</y>
       <w>50</w>
       <h>100</h>
@@ -529,7 +529,7 @@
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>_ b_id _</panel_attributes>
+    <panel_attributes>_ bid _</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -657,13 +657,13 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>950</x>
+      <x>860</x>
       <y>190</y>
-      <w>160</w>
+      <w>250</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;140;30</additional_attributes>
+    <additional_attributes>30;30;230;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -679,23 +679,34 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>970</x>
+      <x>880</x>
       <y>180</y>
-      <w>480</w>
+      <w>570</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;460;30</additional_attributes>
+    <additional_attributes>30;30;550;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>970</x>
+      <x>880</x>
       <y>140</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>30;30;30;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1050</x>
+      <y>140</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>description</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
