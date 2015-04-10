@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="12.2">
+<diagram program="umlet" version="13.0">
   <zoom_level>10</zoom_level>
   <element>
     <type>com.umlet.element.Actor</type>
     <coordinates>
-      <x>270</x>
-      <y>30</y>
+      <x>600</x>
+      <y>110</y>
       <w>100</w>
       <h>120</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>560</x>
-      <y>100</y>
+      <x>890</x>
+      <y>180</y>
       <w>110</w>
       <h>30</h>
     </coordinates>
@@ -28,8 +28,8 @@ bg=red
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
-      <y>110</y>
+      <x>620</x>
+      <y>190</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
@@ -39,8 +39,8 @@ bg=red
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>590</x>
-      <y>100</y>
+      <x>920</x>
+      <y>180</y>
       <w>50</w>
       <h>100</h>
     </coordinates>
@@ -50,20 +50,20 @@ bg=red
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
-      <y>130</y>
+      <x>620</x>
+      <y>210</y>
       <w>340</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-insertEmployee(fname, lname, phone, cpr)</panel_attributes>
+insertEvent(name, description, eid)</panel_attributes>
     <additional_attributes>320;50;30;50</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>610</x>
-      <y>180</y>
+      <x>940</x>
+      <y>260</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -74,8 +74,8 @@ insertEmployee(fname, lname, phone, cpr)</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>310</x>
-      <y>180</y>
+      <x>640</x>
+      <y>260</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -86,8 +86,8 @@ insertEmployee(fname, lname, phone, cpr)</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
-      <y>180</y>
+      <x>630</x>
+      <y>260</y>
       <w>330</w>
       <h>70</h>
     </coordinates>
@@ -98,8 +98,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
-      <y>210</y>
+      <x>620</x>
+      <y>290</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
@@ -109,8 +109,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>590</x>
-      <y>210</y>
+      <x>920</x>
+      <y>290</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
@@ -120,8 +120,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>610</x>
-      <y>280</y>
+      <x>940</x>
+      <y>360</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -132,8 +132,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>310</x>
-      <y>280</y>
+      <x>640</x>
+      <y>360</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -144,32 +144,32 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
-      <y>230</y>
+      <x>630</x>
+      <y>310</y>
       <w>330</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-findEmployee(fname)</panel_attributes>
+findEvent(name)</panel_attributes>
     <additional_attributes>310;50;30;50</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
-      <y>280</y>
+      <x>630</x>
+      <y>360</y>
       <w>330</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
-return Employee</panel_attributes>
+return Event</panel_attributes>
     <additional_attributes>30;50;310;50</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>590</x>
-      <y>310</y>
+      <x>920</x>
+      <y>390</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
@@ -179,8 +179,8 @@ return Employee</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
-      <y>310</y>
+      <x>620</x>
+      <y>390</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
@@ -190,8 +190,8 @@ return Employee</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>310</x>
-      <y>380</y>
+      <x>640</x>
+      <y>460</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -202,8 +202,8 @@ return Employee</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>610</x>
-      <y>380</y>
+      <x>940</x>
+      <y>460</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -214,21 +214,20 @@ return Employee</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
-      <y>330</y>
+      <x>630</x>
+      <y>410</y>
       <w>330</w>
-      <h>94</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-updateEmployee(fname, lname, email, 
-phone, cpr, password)</panel_attributes>
+updateEvent(name, description, eid)</panel_attributes>
     <additional_attributes>310;50;30;50</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
-      <y>380</y>
+      <x>630</x>
+      <y>460</y>
       <w>330</w>
       <h>70</h>
     </coordinates>
@@ -239,8 +238,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>590</x>
-      <y>410</y>
+      <x>920</x>
+      <y>490</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
@@ -250,8 +249,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
-      <y>410</y>
+      <x>620</x>
+      <y>490</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
@@ -261,8 +260,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>310</x>
-      <y>480</y>
+      <x>640</x>
+      <y>560</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -273,8 +272,8 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>610</x>
-      <y>480</y>
+      <x>940</x>
+      <y>560</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -285,20 +284,20 @@ confirm</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
-      <y>430</y>
+      <x>630</x>
+      <y>510</y>
       <w>330</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-removeEmployee(cpr)</panel_attributes>
+removeEvent(eid)</panel_attributes>
     <additional_attributes>310;50;30;50</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>300</x>
-      <y>480</y>
+      <x>630</x>
+      <y>560</y>
       <w>330</w>
       <h>70</h>
     </coordinates>
