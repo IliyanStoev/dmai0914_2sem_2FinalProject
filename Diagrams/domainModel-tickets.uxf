@@ -4,9 +4,9 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>90</x>
-      <y>117</y>
-      <w>108</w>
+      <x>252</x>
+      <y>153</y>
+      <w>144</w>
       <h>144</h>
     </coordinates>
     <panel_attributes>Employee
@@ -26,14 +26,14 @@ isManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>423</x>
-      <y>99</y>
-      <w>153</w>
-      <h>90</h>
+      <x>252</x>
+      <y>432</y>
+      <w>144</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>Booking
 --
-b_id
+bid
 date
 status
 total</panel_attributes>
@@ -42,26 +42,24 @@ total</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>936</x>
-      <y>126</y>
-      <w>126</w>
-      <h>90</h>
+      <x>828</x>
+      <y>684</y>
+      <w>153</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>Ticket
 --
 barcode
-inStock
-t_type
-price</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>684</x>
-      <y>126</y>
-      <w>153</w>
-      <h>63</h>
+      <x>540</x>
+      <y>432</y>
+      <w>144</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>BookingLine
 --
@@ -71,24 +69,24 @@ quantity</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>810</x>
-      <y>126</y>
-      <w>143</w>
+      <x>657</x>
+      <y>459</y>
+      <w>188</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1
 </panel_attributes>
-    <additional_attributes>27;27;126;27</additional_attributes>
+    <additional_attributes>27;27;171;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>171</x>
-      <y>108</y>
-      <w>269</w>
-      <h>63</h>
+      <x>270</x>
+      <y>270</y>
+      <w>96</w>
+      <h>179</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -96,34 +94,36 @@ m2=0..*
 makes&gt;
 
 </panel_attributes>
-    <additional_attributes>27;45;252;45</additional_attributes>
+    <additional_attributes>54;27;54;162</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1251</x>
-      <y>513</y>
-      <w>144</w>
-      <h>81</h>
+      <x>828</x>
+      <y>432</y>
+      <w>153</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>TicketType
 --
-tt_id
+name
 description
 price
-amount</panel_attributes>
+amount
+inStock</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1179</x>
-      <y>126</y>
-      <w>117</w>
-      <h>72</h>
+      <x>828</x>
+      <y>180</y>
+      <w>153</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>Event
 --
+eid
 name
 description</panel_attributes>
     <additional_attributes/>
@@ -131,10 +131,10 @@ description</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1170</x>
-      <y>333</y>
-      <w>126</w>
-      <h>81</h>
+      <x>1098</x>
+      <y>180</y>
+      <w>153</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>Statistics
 --
@@ -147,47 +147,47 @@ bookingsNo
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1296</x>
-      <y>567</y>
+      <x>882</x>
+      <y>504</y>
       <w>44</w>
-      <h>125</h>
+      <h>197</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>27;27;27;108</additional_attributes>
+    <additional_attributes>27;27;27;180</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1035</x>
-      <y>126</y>
-      <w>161</w>
-      <h>44</h>
+      <x>882</x>
+      <y>252</y>
+      <w>44</w>
+      <h>197</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>144;27;27;27</additional_attributes>
+    <additional_attributes>27;27;27;180</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>549</x>
-      <y>126</y>
-      <w>152</w>
+      <x>369</x>
+      <y>459</y>
+      <w>188</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>27;27;135;27</additional_attributes>
+    <additional_attributes>27;27;171;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>468</x>
-      <y>162</y>
+      <x>297</x>
+      <y>504</y>
       <w>44</w>
       <h>179</h>
     </coordinates>
@@ -199,32 +199,44 @@ m2=1</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>441</x>
-      <y>324</y>
-      <w>108</w>
-      <h>63</h>
+      <x>252</x>
+      <y>666</y>
+      <w>144</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>Receipt
 
 
 --
 receiptNo
-
-Rdate
-</panel_attributes>
+rDate
+amount</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1206</x>
-      <y>171</y>
-      <w>44</w>
-      <h>179</h>
+      <x>954</x>
+      <y>198</y>
+      <w>161</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=   1
 m2=  1</panel_attributes>
-    <additional_attributes>27;162;27;27</additional_attributes>
+    <additional_attributes>144;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>369</x>
+      <y>198</y>
+      <w>476</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=1..*</panel_attributes>
+    <additional_attributes>27;27;459;27</additional_attributes>
   </element>
 </diagram>
