@@ -119,13 +119,16 @@ inStock</panel_attributes>
       <x>828</x>
       <y>180</y>
       <w>153</w>
-      <h>99</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>Event
 --
 eid
 name
-description</panel_attributes>
+description
+budjet
+startDate
+deadlineDate</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -161,14 +164,14 @@ m2=1..*</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>882</x>
-      <y>252</y>
+      <y>270</y>
       <w>44</w>
-      <h>197</h>
+      <h>179</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>27;27;27;180</additional_attributes>
+    <additional_attributes>27;27;27;162</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
