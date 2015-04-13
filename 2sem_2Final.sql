@@ -9,7 +9,8 @@ email varchar(40),
 phone varchar(40),
 password varchar(30),
 tokens int,
-isManager bit );
+isManager bit,
+company varchar(50) );
 
 
 
@@ -17,9 +18,10 @@ create table event (
 eid int identity(1,1) not null primary key(eid),
 name varchar(40),
 description varchar(400),
-budjet decimal(10,5),
-startDate varchar(50),
-deadlineDate varchar(50));
+budget decimal(10,5),
+evDate date,
+cpr varchar(40), 
+foreign key (cpr) references employee(cpr));
 
 
 
@@ -28,7 +30,6 @@ ttid int identity(1,1) not null primary key(ttid),
 name varchar(40),
 description varchar(400),
 price decimal(10,5),
-amount int,
 inStock int,
 eid int,
 foreign key (eid) references event(eid));
@@ -49,21 +50,19 @@ amount int);
 
 create table booking ( 
 bid int identity(1,1) not null primary key(bid),
-date varchar(50),
+bdate date,
 status varchar(40),
 total decimal(10,5),
+gname varchar(40),
+gphone varchar(40),
+gemail varchar(40),
+quantity int,
+ttid int,
 cpr varchar(40),
 receiptNo int,
+foreign key (ttid) references ticketType(ttid),
 foreign key (cpr) references employee(cpr),
 foreign key (receiptNo) references receipt(receiptNo));
-
-
-create table bookingLine ( 
-quantity int,
-bid int,
-ttid int,
-foreign key (bid) references booking(bid),
-foreign key (ttid) references ticketType(ttid));
 
 
 create table eStatistics (
