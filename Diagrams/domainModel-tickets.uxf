@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="13.0">
-  <zoom_level>9</zoom_level>
+<diagram program="umlet" version="12.2">
+  <zoom_level>8</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>252</x>
-      <y>153</y>
-      <w>144</w>
-      <h>144</h>
+      <x>104</x>
+      <y>56</y>
+      <w>128</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>Employee
 
@@ -26,26 +26,31 @@ isManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>252</x>
-      <y>432</y>
-      <w>144</w>
-      <h>99</h>
+      <x>104</x>
+      <y>304</y>
+      <w>128</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>Booking
 --
-bid
 date
 status
-total</panel_attributes>
+quantity
+total
+gname
+gphone
+gemail
+payType
+isPaid</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>828</x>
-      <y>684</y>
-      <w>153</w>
-      <h>99</h>
+      <x>616</x>
+      <y>512</y>
+      <w>136</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>Ticket
 --
@@ -56,10 +61,10 @@ barcode
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>540</x>
-      <y>432</y>
-      <w>144</w>
-      <h>99</h>
+      <x>360</x>
+      <y>552</y>
+      <w>128</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>BookingLine
 --
@@ -69,24 +74,24 @@ quantity</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>657</x>
-      <y>459</y>
-      <w>188</w>
-      <h>44</h>
+      <x>208</x>
+      <y>328</y>
+      <w>424</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1
 </panel_attributes>
-    <additional_attributes>27;27;171;27</additional_attributes>
+    <additional_attributes>24;24;408;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>270</x>
-      <y>270</y>
-      <w>96</w>
-      <h>179</h>
+      <x>120</x>
+      <y>160</y>
+      <w>84</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -94,50 +99,48 @@ m2=0..*
 makes&gt;
 
 </panel_attributes>
-    <additional_attributes>54;27;54;162</additional_attributes>
+    <additional_attributes>48;24;48;144</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>828</x>
-      <y>432</y>
-      <w>153</w>
-      <h>99</h>
+      <x>616</x>
+      <y>304</y>
+      <w>136</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>TicketType
 --
 name
 description
 price
-amount
 inStock</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>828</x>
-      <y>180</y>
-      <w>153</w>
-      <h>117</h>
+      <x>616</x>
+      <y>80</y>
+      <w>136</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>Event
 --
-eid
 name
 description
-budjet
-startDate
-deadlineDate</panel_attributes>
+budget
+evDate
+evManager</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1098</x>
-      <y>180</y>
-      <w>153</w>
-      <h>99</h>
+      <x>856</x>
+      <y>80</y>
+      <w>136</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Statistics
 --
@@ -150,62 +153,49 @@ bookingsNo
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>882</x>
-      <y>504</y>
-      <w>44</w>
-      <h>197</h>
+      <x>664</x>
+      <y>368</y>
+      <w>40</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>27;27;27;180</additional_attributes>
+    <additional_attributes>24;24;24;144</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>882</x>
-      <y>270</y>
-      <w>44</w>
-      <h>179</h>
+      <x>664</x>
+      <y>152</y>
+      <w>40</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>27;27;27;162</additional_attributes>
+    <additional_attributes>24;24;24;152</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>369</x>
-      <y>459</y>
-      <w>188</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m1=1
-m2=1..*</panel_attributes>
-    <additional_attributes>27;27;171;27</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>297</x>
-      <y>504</y>
-      <w>44</w>
-      <h>179</h>
+      <x>144</x>
+      <y>416</y>
+      <w>40</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1</panel_attributes>
-    <additional_attributes>27;27;27;162</additional_attributes>
+    <additional_attributes>24;24;24;96</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>252</x>
-      <y>666</y>
-      <w>144</w>
-      <h>99</h>
+      <x>104</x>
+      <y>512</y>
+      <w>128</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Receipt
 
@@ -219,27 +209,27 @@ amount</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>954</x>
-      <y>198</y>
-      <w>161</w>
-      <h>44</h>
+      <x>728</x>
+      <y>96</y>
+      <w>144</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=   1
 m2=  1</panel_attributes>
-    <additional_attributes>144;27;27;27</additional_attributes>
+    <additional_attributes>128;24;24;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>369</x>
-      <y>198</y>
-      <w>476</w>
-      <h>44</h>
+      <x>208</x>
+      <y>96</y>
+      <w>424</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1..*</panel_attributes>
-    <additional_attributes>27;27;459;27</additional_attributes>
+    <additional_attributes>24;24;408;24</additional_attributes>
   </element>
 </diagram>
