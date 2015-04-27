@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="12.2">
+<diagram program="umlet" version="13.0">
   <zoom_level>8</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>104</x>
-      <y>8</y>
+      <x>384</x>
+      <y>184</y>
       <w>128</w>
       <h>136</h>
     </coordinates>
@@ -27,8 +27,8 @@ company
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>104</x>
-      <y>256</y>
+      <x>384</x>
+      <y>432</y>
       <w>128</w>
       <h>136</h>
     </coordinates>
@@ -48,10 +48,10 @@ isPaid</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>616</x>
-      <y>464</y>
+      <x>696</x>
+      <y>760</y>
       <w>136</w>
-      <h>64</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Ticket
 --
@@ -60,23 +60,10 @@ barcode
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>360</x>
-      <y>504</y>
-      <w>128</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>BookingLine
---
-quantity</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>208</x>
-      <y>280</y>
+      <x>488</x>
+      <y>456</y>
       <w>424</w>
       <h>40</h>
     </coordinates>
@@ -89,9 +76,9 @@ m2=1
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>120</x>
-      <y>120</y>
-      <w>84</w>
+      <x>400</x>
+      <y>296</y>
+      <w>86</w>
       <h>152</h>
     </coordinates>
     <panel_attributes>lt=-
@@ -105,8 +92,8 @@ makes&gt;
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>616</x>
-      <y>256</y>
+      <x>896</x>
+      <y>432</y>
       <w>136</w>
       <h>88</h>
     </coordinates>
@@ -121,8 +108,8 @@ inStock</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>616</x>
-      <y>32</y>
+      <x>896</x>
+      <y>208</y>
       <w>136</w>
       <h>96</h>
     </coordinates>
@@ -138,8 +125,8 @@ evManager</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>856</x>
-      <y>32</y>
+      <x>1320</x>
+      <y>208</y>
       <w>136</w>
       <h>88</h>
     </coordinates>
@@ -154,21 +141,21 @@ bookingsNo
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>664</x>
-      <y>320</y>
-      <w>40</w>
-      <h>160</h>
+      <x>488</x>
+      <y>544</y>
+      <w>224</w>
+      <h>232</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>24;24;24;144</additional_attributes>
+    <additional_attributes>24;24;208;216</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>664</x>
-      <y>104</y>
+      <x>944</x>
+      <y>280</y>
       <w>40</w>
       <h>168</h>
     </coordinates>
@@ -180,21 +167,21 @@ m2=1..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>144</x>
-      <y>368</y>
+      <x>424</x>
+      <y>544</y>
       <w>40</w>
-      <h>112</h>
+      <h>232</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1</panel_attributes>
-    <additional_attributes>24;24;24;96</additional_attributes>
+    <additional_attributes>24;24;24;216</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>104</x>
-      <y>464</y>
+      <x>384</x>
+      <y>760</y>
       <w>128</w>
       <h>88</h>
     </coordinates>
@@ -210,21 +197,21 @@ amount</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>728</x>
-      <y>48</y>
-      <w>144</w>
+      <x>1008</x>
+      <y>224</y>
+      <w>328</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=   1
 m2=  1</panel_attributes>
-    <additional_attributes>128;24;24;24</additional_attributes>
+    <additional_attributes>312;24;24;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>208</x>
-      <y>48</y>
+      <x>488</x>
+      <y>224</y>
       <w>424</w>
       <h>40</h>
     </coordinates>
