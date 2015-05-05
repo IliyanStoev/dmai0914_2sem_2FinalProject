@@ -53,10 +53,11 @@ bg=red
       <x>290</x>
       <y>130</y>
       <w>340</w>
-      <h>70</h>
+      <h>94</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-insertEmployee(fname, lname, phone, cpr)</panel_attributes>
+insertEmployee(fname, lname, cpr,
+isManager, company)</panel_attributes>
     <additional_attributes>320;50;30;50</additional_attributes>
   </element>
   <element>
