@@ -12,7 +12,7 @@ import modelLayer.Employee;
 public class DbEmployee {
 
 	public int insertEmployee(Employee emp) {
-		String q = "insert into employee (fname, lname, phone, cpr, password) values (?, ?, ?, ?, ?)";
+		String q = "insert into employee (fname, lname, phone, cpr, password, isManager, company) values (?, ?, ?, ?, ?, ?, ?)";
 		int res = -1;
 		try(PreparedStatement ps = DbConnection.getInstance().getDBcon().prepareStatement(q)
 		){
@@ -21,8 +21,16 @@ public class DbEmployee {
 			ps.setString(3, emp.getPhone());
 			ps.setString(4, emp.getCpr());
 			ps.setString(5, emp.getPassword());
+			ps.setBoolean(6, emp.isManager());
+			ps.setString(7, emp.getCompany());
 			
 			res = ps.executeUpdate();
+			
+			if (res != -1) {
+				DbEvent dbEv = new DbEvent();
+				
+				res = dbEv.insertEmpEvent(emp.getEv(), emp);
+			}
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -32,9 +40,13 @@ public class DbEmployee {
 	
 	public Employee findEmployee(String fname) {
 		String w = "fname = '" + fname + "'";
-		Employee emp = this.singleWhere(w);
+		Employee emp = this.singleWhere(w, true);
 		return emp;
 	}
+	
+	public ArrayList<Employee> getAllEmployees(){
+        return miscWhere("", false);
+    }
 	
 	public int updateEmployee(Employee emp) {
 		int res = -1;
@@ -57,8 +69,8 @@ public class DbEmployee {
 
 	public int removeEmployee(Employee emp) {
 		int res = -1;
-		try(PreparedStatement ps = DbConnection.getInstance().getDBcon().prepareStatement("delete from employee where cpr = ?")) {
-			ps.setString(1, emp.getCpr());
+		try(PreparedStatement ps = DbConnection.getInstance().getDBcon().prepareStatement("delete from employee where fname = ?")) {
+			ps.setString(1, emp.getFname());
 			res = ps.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -85,22 +97,24 @@ public class DbEmployee {
 			emp.setCpr(rs.getString("cpr"));
 			emp.setPassword(rs.getString("password"));
 			emp.setTokens(rs.getInt("tokens"));
+			emp.setIsManager(rs.getBoolean("isManager"));
+			emp.setCompany(rs.getString("company"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return emp;
 	}
 	
-	private Employee singleWhere(String where) {
-		List<Employee> res = miscWhere(where);
+	public Employee singleWhere(String where, boolean retrieveAssociation) {
+		List<Employee> res = miscWhere(where, retrieveAssociation);
 		if(res.size() > 0) {
 			return res.get(0);
 		}
 		return null;
 	}
 	
-	private List<Employee> miscWhere(String where) {
-		List<Employee> res = new ArrayList<>();
+	private ArrayList<Employee> miscWhere(String where, boolean retrieveAssociation) {
+		ArrayList<Employee> res = new ArrayList<>();
 		try(Statement s = DbConnection.getInstance().getDBcon().createStatement()
 		) {
 			String q = buildQuery(where);

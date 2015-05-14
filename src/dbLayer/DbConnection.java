@@ -81,7 +81,7 @@ import java.sql.DriverManager;
 	        return instance;
 	    }
 	    
-	    public static void startTransaction() { 
+	    public static void startTransaction() {  
 	    	if(instance == null) {
 	    		getInstance();
 	    	}

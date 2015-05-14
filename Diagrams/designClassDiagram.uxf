@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>940</x>
+      <y>50</y>
+      <w>200</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>MainWindow
+--
+- contentPane : JPanel
+- users : JComboBox
+--
++ main
+&lt;&lt; MainWindow() &gt;&gt;
++ getUser() : Employee
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>320</y>
+      <w>240</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>UserInformation
+--
+- fnameTF : JTextField
+- lnameTF : JTextField
+- emailTF : JTextField
+- phoneTF : JTextField
+- cprTF : JTextField
+- companyTF : JTextField
+- positionTF : JTextField
+- textField_7 : JTextField
+- projectsList : JList
+--
+&lt;&lt; UserInformation() &gt;&gt;
++ fillUserInfo(fname)
+- updateEmployee()
+- edit()
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>920</x>
+      <y>350</y>
+      <w>220</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>EventOverview
+--
+- eoDateTF : JTextField
+- eoEvIdTF : JTextField
+- eoDescriptionTF : JTextField
+- eoBudgedTF : JTextField
+- eoEvNameCB : JComboBox
+- eoProjManCB : JComboBox
+--
+&lt;&lt;EventOverview()&gt;&gt;
+- fillEventInfo()
+- updateEvent()
+- edit()
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1220</x>
+      <y>230</y>
+      <w>230</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>ManagerTab
+--
+- rcprTF : JTextField
+- rlnameTF : JTextField
+- rfnameCB : JComboBox
+- rcompanyCB : JComboBox
+- rprojectCB : JComboBox 
+- chckbxIsManager : JCheckBox
+- rEvnameCB : JComboBox
+- rprojmanCB : JComboBox
+- rdescript : JTextField
+- rbudget : JTextField
+- datePicker : JDatePickerImpl
+- ttEvnameCB : JComboBox
+- ttNameTF : JTextField
+- ttAmountTF : JTextField
+- ttPriceTF : JTextField
+- ttDescriptionTF : JTextField
+--
+&lt;&lt; ManagerTab() &gt;&gt;
+- registerEmployee()
+- removeEmployee()
+- clearFieldsEmp()
+- registerEvent()
+- removeEvent()
+- clearFieldsEv()
+- insertTicketType()
+- clearTicketTypeFields()
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1540</x>
+      <y>250</y>
+      <w>240</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>BokingTab
+--
+- btGuestNameTF : JTextField
+- btPhoneTF : JTextField
+- btEmailTF : JTextField
+- btEvNameCB : JComboBox
+- btTicketTypeCB : JComboBox
+- btTicketQuantCB : JComboBox
+- btEmpNameCB : JComboBox
+- rdbtnCreditCard : JRadioButton
+- rdbtnCash : JRadioButton
+- rdbtnTokens : JRadioButton
+- chckbxPaid : JCheckBox
+- lblStatus : JLabel
+- evId : int
+- tt : TicketType
+- bdate : Date
+- textField : JTextField
+--
+&lt;&lt;BookingTab()&gt;&gt;
+- registerBooking()
+- findBooking()
+- cancelBooking()
+- calculateTotalPrice()
+- clearAllFields() 
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>650</x>
+      <y>390</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>AddEvent
+--
+- contentPane : JPanel
+- ev1 : Event
+- ev2 : Event
+--
++ main()
+&lt;&lt; AddProjectsToEmployee() &gt;&gt;
+- addProjects()
+
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>220</x>
+      <y>720</y>
+      <w>280</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>EmployeeCtr
+--
+--
++ insertEmployee(fname, lname, cpr,
+isManager, company, ev) : int
++ findEmployee(fname String) : Employee
++ findAllEmployees() : ArrayList&lt;Employee&gt;
++ updateEmployee(fname, lname, email,
+phone, cpr, password) :  int
++ removeEmployee(fname String)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>720</y>
+      <w>340</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>EventCtr
+--
+--
++ insertEvent(name, projectManager,
+date, budget, description) : int
++ findEvent(name String) : Event
++ findAllEvents() : ArrayList&lt;Event&gt;
++ updateEvent(name, budget, descriprion) : int
++ removeEvent(eid int) : int
++ insertEmpEvent(ev, emp) : int
++ findEmpEvents(emp Employee) : ArrayList&lt;Event&gt;
++ isDuplicate(ev, emp) : boolean
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>920</x>
+      <y>770</y>
+      <w>250</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>TicketCtr
+--
+--
++ insertTicket(barcode, tt) : int
++ findTicket(barcode) : Ticket
++ generateTicket(ttName) : Ticket
++ generateBarcode(ttName) : String
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1580</x>
+      <y>760</y>
+      <w>330</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>TicketTypeCtr
+--
+
+--
++ insertTicketType(ev, name, inStock,
+price, description) : int
++ findTicketType(name) : TicketType
++ findAllTicketTypes(evId) : ArrayList&lt;TicketType&gt;
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1260</x>
+      <y>740</y>
+      <w>250</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>BookingCtr
+--
+
+--
++ registerBooking(bdate, emp, tt, 
+quantity, total, gname, gphone, 
+gemail, payType, status) : int
++ findBooking(phone String) : Booking
++ cancelBooking(phone String) : int
+
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>220</x>
+      <y>970</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+
+--
++ insertEmployee(emp) : int
++ findEmployee(fname) : Employee
++ getAllEmployees() : ArrayList&lt;Employee&gt;
++ updateEmployee(emp) : int
++ removeEmployee(emp) : int
+- buildQuery(where) : String
+- buildEmployee(rs) : Employee
++ singleWhere(where, ra) : Employee
+- miscWhere(where, ra) : ArrayList&lt;Employee&gt;
+
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>570</x>
+      <y>980</y>
+      <w>280</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+
+--
++ insertEvent(ev) : int
++ findEvent(name) : Event
++ getAllEvents() : ArrayList&lt;Event&gt;
++ updateEvent(ev) : int
++ removeEvent(ev) : int
+- buildQuery(where) : String
+- buildEvent(rs) : Event
++ singleWhere(where, ra) : Event
+- miscWhere(where, ra) : ArrayList&lt;Event&gt;
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>900</x>
+      <y>980</y>
+      <w>280</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Ticket
+--
+
+--
++ insertTicket(t) : int
++ findTicket(barcode) : Ticket
++ removeTickets(book) : int
+- buildQuery(where) : String
+- buildTicket(rs) : Ticket
++ singleWhere(where, ra) : Ticket
+- miscWhere(where, ra) : ArrayList&lt;Ticket&gt;
++ generateTicket(evName) : Ticket
++ generateBarcode(evName) : String
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1600</x>
+      <y>980</y>
+      <w>310</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>TicketType
+--
+
+--
++ insertTicketType(tt) : int
++ findTicketType(name) : TicketType
+- findTicketType(ttId) : TicketType
++ getAllTicketTypes(evId) : ArrayList&lt;Event&gt;
++ updateTicketTypeStock(quantity, ttId) : int : int
+- buildQuery(where) : String
+- buildTicketType(rs) : TicketType
++ singleWhere(where, ra) : TicketType
+- miscWhere(where, ra) : ArrayList&lt;Ticket&gt;
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1240</x>
+      <y>980</y>
+      <w>290</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Booking
+--
+
+--
++ insertBooking(book) : int
++ findBooking(phone) : Booking
++ cancelBooking(book) : int
+- buildQuery(where) : String
+- buildBooking(rs) : Booking
+- singleWhere(where, ra) : Booking
+- miscWhere(where, ra) : ArrayList&lt;Booking&gt;
+
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>230</x>
+      <y>1220</y>
+      <w>270</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+- fname : String
+- lname : String
+- email : String
+- phone : String
+- cpr : String
+- password : String
+- tokens : int
+- isManager : boolean
+- company : String
+- ev : Event
+--
++ &lt;&lt;Employee(fname, lname, cpr
+isManager, company, ev)&gt;&gt;
++ &lt;&lt;Employee(fname, cpr)&gt;&gt;
++ getFname() : String
++ setFname(fname String)
++ getLname() : String
++ setLname(lname String)
++ getEmail() : String
++ setEmail(email String)
++ getPhone() : String
++ setPhone(phone String)
++ getCpr() : String
++ setCpr(cpr String)
++ getPassword() : String
++ setPassword(password String)
++ getTokens() : int
++ setTokcns(tokents int)
++ isManager() : boolean
++ setIsManager(isManager boolean)
++ getCompany() : String
++ setCompany(company String)
++ getEv() : Event
++ setEv(ev Event)
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>580</x>
+      <y>1220</y>
+      <w>320</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+- eid : int
+- name : String
+- description : String
+- projectManager : Employee
+- date : Date
+- budget : double
+--
+&lt;&lt; Event() &gt;&gt;
+&lt;&lt; Event(eid, name, projectManager
+date, budget, description)&gt;&gt;
+&lt;&lt; Event(eid) &gt;&gt;
++ getEid() : int
++ setEid(eid int)
++ getName() : String
++ setName(name String)
++ getDescription() : String
++ setDescription(description String)
++ getProjectManager() : Employee
++ setProjectManager(projectManager Employee)
++ getDate() : Date
++ setDate(date Date)
++ getBudget() : double
++ setBudget(budget double)
+
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>970</x>
+      <y>1220</y>
+      <w>190</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Ticket
+--
+- barcode : String
+- tt : TicketType
+--
+&lt;&lt; Ticket &gt;&gt;
++ getBarcode() : String
++ setBarcode(barcode String)
++ getTt() : TicketType
++ setTt(tt TicketType)
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1620</x>
+      <y>1210</y>
+      <w>230</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>TicketType
+--
+- ev : Event
+- name : String
+- inStock : int
+- description : String
+- price : double
+- ttId : int
+--
+&lt;&lt; TicketType(ev, name, inStock,
+description, price) &gt;&gt;
+&lt;&lt; TicketType(ttId) &gt;&gt;
+&lt;&lt; TicketType() &gt;&gt;
++ getEv() : Event
++ setEv(ev Event)
++ getName() : String
++ setName(name String)
++ getInStock() : int
++ setInStock(inStock int)
++ getDescription() : String
++ setDescription(description String)
++ getPrice() : double
++ setPrice(price double)
++ getTtId() : int
++ setTtId(ttId int)
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1280</x>
+      <y>1210</y>
+      <w>200</w>
+      <h>580</h>
+    </coordinates>
+    <panel_attributes>Booking
+--
+- b_id:int
+- tt : TicketType
+- quantity : int
+- gname : String
+- gphone : String
+- gemail : String
+- payType : int
+- status : String
+- emp : Employee
+- bdate : Date
+- total : double
+--
++ &lt;&lt;Booking()&gt;&gt;
++ getB_id() : int
++ setB_id(b_id int)
++ getTt() : TicketType
++ setTt(tt TicketType)
++ getQuantity() : int
++ setQuantity(quantity int)
++ getGname() : String
++ setGname(gname String)
++ getGphone() : String
++ setGphone(gphone String)
++ getGemail() : String
++ setGemail(gemail String)
++ getPayType() : int
++ setPayType(payType int)
++ getStatus() : String
++ setStatus(status String)
++ getEmp() : Employee
++ setEmp(emp Employee)
++ getBdate() : Date
++ setBdate(bdate Date)
++ getTotal() : double
++ setTotal(total Double)
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1830</x>
+      <y>200</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>GUI Layer
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1850</x>
+      <y>690</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Ctr Layer
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1850</x>
+      <y>940</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Db Layer
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1860</x>
+      <y>1210</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Model Layer
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>230</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Wrapper&lt;T&gt;
+--
+- obj T
+- f : Supplier&lt;String&gt;
+--
+&lt;&lt; Wrapper(obj, f) &gt;&gt;
++ toString()
++ getObject() : T
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>360</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>HelperClass
+--
+
+--
+&lt;&lt; HelperClass() &gt;&gt;
++ getEmployees() : ArrayList&lt;Wrapper&lt;Employee&gt;&gt;
++ getEvents() : ArrayList&lt;Wrapper&lt;Event&gt;&gt;
++ getTicketTypes(evId) : ArrayList&lt;Wrapper&lt;TcketType&gt;&gt;
++ getEmpEvents(emp) : ArrayList&lt;Wrapper&lt;&lt;Event&gt;&gt;
++ nameIsNotValid(name) : boolean
++ phoneIsNotValid(phone) : boolean
++ emailIsNotValid(email) : boolean
+
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>330</x>
+      <y>1130</y>
+      <w>50</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>670</x>
+      <y>1130</y>
+      <w>90</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;70;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1000</x>
+      <y>1130</y>
+      <w>80</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;60;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1710</x>
+      <y>1130</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1350</x>
+      <y>1100</y>
+      <w>50</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;110</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1500</x>
+      <y>1040</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;100;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1150</x>
+      <y>1030</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>90;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1360</x>
+      <y>850</y>
+      <w>50</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;130</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>330</x>
+      <y>850</y>
+      <w>50</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;120</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>680</x>
+      <y>880</y>
+      <w>50</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1010</x>
+      <y>850</y>
+      <w>50</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;130</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1710</x>
+      <y>830</y>
+      <w>50</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;150</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>400</x>
+      <y>140</y>
+      <w>560</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>30;180;540;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1000</x>
+      <y>200</y>
+      <w>50</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>30;150;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1110</x>
+      <y>90</y>
+      <w>460</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>440;160;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1110</x>
+      <y>120</y>
+      <w>130</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>110;120;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>540</x>
+      <y>410</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>110;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>350</x>
+      <y>540</y>
+      <w>50</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;180</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>830</x>
+      <y>630</y>
+      <w>410</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>390;30;30;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>450</x>
+      <y>610</y>
+      <w>790</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>770;30;30;110</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1190</x>
+      <y>640</y>
+      <w>490</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;470;120</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>270</x>
+      <y>90</y>
+      <w>690</w>
+      <h>650</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>670;30;30;150;30;630</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>790</x>
+      <y>520</y>
+      <w>240</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>220;30;30;200</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1460</x>
+      <y>610</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>180;30;30;130</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>490</y>
+      <w>50</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;230</additional_attributes>
+  </element>
+</diagram>
