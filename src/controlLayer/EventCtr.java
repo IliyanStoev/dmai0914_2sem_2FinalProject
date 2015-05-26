@@ -101,9 +101,9 @@ public class EventCtr {
 		ArrayList<Event> empEv = new ArrayList<Event>();
 		empEv = dbEv.getEmpEvents(emp.getCpr());
 		
-		for(Event ev : empEv) {
+		/*for(Event ev : empEv) {
 			System.out.println(ev.getName());			
-		}
+		}*/
 		return empEv;
 	}
 	

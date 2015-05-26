@@ -84,69 +84,6 @@ public class MainWindow extends JFrame {
 		contentPane.add(lblFindEmployee);
 	}
 	
-	/*public static ArrayList<String> getEmpNames() {
-		EmployeeCtr empCtr = new EmployeeCtr();
-		ArrayList<Employee> empList = empCtr.findAllEmployee();
-		ArrayList<String> empNames = new ArrayList<>();
-		for(Employee emp : empList) {
-			empNames.add(emp.getFname());
-		}
-		return empNames;
-	}
-	
-	public static ArrayList<String> getEventNames() {
-		EventCtr evCtr = new EventCtr();
-		ArrayList<Event> evList = evCtr.findAllEvents();
-		ArrayList<String> evNames = new ArrayList<>();
-		for(Event ev : evList) {
-			evNames.add(ev.getName());
-		}
-		return evNames;
-	}
-	
-	public static ArrayList<String> getTicketTypeNames(int evId) {
-		TicketTypeCtr ttCtr = new TicketTypeCtr();
-		ArrayList<TicketType> ttList = ttCtr.findAllTicketTypes(evId);
-		ArrayList<String> ttNames = new ArrayList<>();
-		for(TicketType tt : ttList) {
-			ttNames.add(tt.getPrice() + " dkk - " + tt.getName());
-		}
-		return ttNames;
-	}
-	
-	public static ArrayList<String> getEmpEvents(Employee emp) {
-		EventCtr evCtr = new EventCtr();
-		
-		ArrayList<Event> empEvList = evCtr.findEmpEvents(emp);
-		ArrayList<String> empEvNames = new ArrayList<>();
-		for(Event ev : empEvList) {
-			empEvNames.add(ev.getName());
-		}
-		
-		return empEvNames;
-	}
-	
-	public static boolean nameIsNotValid(String name) {
-		Pattern p = Pattern.compile("([0-9])");
-		Matcher m = p.matcher(name);
-		
-		return m.find();
-	}
-	
-	public static boolean phoneIsNotValid(String phone) {
-		Pattern p = Pattern.compile("\\d");
-		Matcher m = p.matcher(phone);
-		
-		return m.find();
-	}
-	
-	public static boolean emailIsValid(String email) {
-		Pattern p = Pattern.compile("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}");
-		Matcher m = p.matcher(email);
-		
-		return m.find();
-	}*/
-	
 	public static Employee getUser() {
 		EmployeeCtr empCtr = new EmployeeCtr();
 		String userName = users.getSelectedItem().toString();

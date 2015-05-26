@@ -25,10 +25,7 @@ public class BookingCtr {
 		book.setStatus(status);
 		int res = -1;
 		
-		try{
-			Connection con = DbConnection.getInstance().getDBcon();
-			con.setTransactionIsolation(con.TRANSACTION_SERIALIZABLE);
-			
+		try{		
 			
 	          DbConnection.startTransaction();
 	          DbBooking dbBook = new DbBooking();

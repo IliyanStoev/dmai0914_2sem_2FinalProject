@@ -49,7 +49,7 @@ public class DbTicketType {
 	
 	public ArrayList<TicketType> getAllTicketTypes(int evId){
 		if(evId == -1) {
-			return miscWhere("", false);
+			return miscWhere("", true);
 		}
 		else {
 			return miscWhere("eid = '" + evId + "'", false);
@@ -73,16 +73,6 @@ public class DbTicketType {
 		return res;
 	}
 		
-		/*public int removeEvent(Event ev) {
-			int res = -1;
-			try(PreparedStatement ps = DbConnection.getInstance().getDBcon().prepareStatement("delete from event where eid = ?")) {
-				ps.setInt(1, ev.getEid());
-				res = ps.executeUpdate();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			return res;
-		}*/
 	
 	private String buildQuery(String where) {
 		String q = "select * from ticketType";
@@ -130,7 +120,7 @@ public class DbTicketType {
 					if(retrieveAssociation) {
 						DbEvent dbEv = new DbEvent();
 						int eid = tt.getEv().getEid();
-                        Event ev = dbEv.singleWhere(" eid = '" + eid + "'", false);
+                        Event ev = dbEv.singleWhere(" eid = '" + eid + "'", true);
                         tt.setEv(ev);
 					}
 				res.add(tt);

@@ -101,7 +101,9 @@ public class BookingTab extends JPanel {
 		btTicketTypeCB.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(btTicketTypeCB.getSelectedIndex() != -1) {
-					tt = ((Wrapper<TicketType>)btTicketTypeCB.getSelectedItem()).getObject();
+					TicketTypeCtr ttCtr = new TicketTypeCtr();
+					tt = ttCtr.findTicketType(((Wrapper<TicketType>)btTicketTypeCB.getSelectedItem()).getObject().getName());
+					System.out.println(tt.getEv().getName());
 				}
 			}
 		});
@@ -255,7 +257,7 @@ public class BookingTab extends JPanel {
 		add(btnCancelBooking);
 		
 		textField = new JTextField();
-		textField.setText("2015/04/13");
+		textField.setText(""+bdate);
 		textField.setHorizontalAlignment(SwingConstants.CENTER);
 		textField.setEditable(false);
 		textField.setColumns(10);

@@ -212,7 +212,7 @@ public class UserInformation extends JPanel {
 		String email = emailTF.getText();
 		String phone = phoneTF.getText();
 		String cpr = cprTF.getText();
-		String password = "default"; //passwordTF.getText();
+		String password = "default"; 
 		int res = -1;
 		
 		EmployeeCtr empCtr = new EmployeeCtr();

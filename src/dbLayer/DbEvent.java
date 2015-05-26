@@ -52,7 +52,7 @@ public class DbEvent {
 	}
 	
 	public ArrayList<Event> getAllEvents(){
-        return miscWhere("", false);
+        return miscWhere("", true);
     }
 	
 	public int updateEvent(Event ev) {

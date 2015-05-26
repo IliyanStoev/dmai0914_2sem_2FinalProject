@@ -184,7 +184,7 @@ public class ManagerTab extends JPanel {
 						date.setText(""+ev.getDate());
 						date.setBounds(120, 93, 150, 25);
 						panel_1.add(date);
-						rbudgetTF.setText(ev.getBudget() + " DKK");			
+						rbudgetTF.setText(ev.getBudget() + " DKK");		
 					}
 				}
 			}

@@ -43,6 +43,7 @@ public class HelperClass {
 		ArrayList<Wrapper<TicketType>> wraptt = new ArrayList<>();
 		for(TicketType tt : ttList) {
 			wraptt.add(new Wrapper<TicketType>(tt, () -> tt.getPrice() + " dkk - " + tt.getName()));
+			//System.out.println(tt.getEv().getName());
 		}
 		return wraptt;
 	}
@@ -66,7 +67,7 @@ public class HelperClass {
 	}
 	
 	public static boolean phoneIsNotValid(String phone) {
-		Pattern p = Pattern.compile("\\d");
+		Pattern p = Pattern.compile("\\D");
 		Matcher m = p.matcher(phone);
 		
 		return m.find();

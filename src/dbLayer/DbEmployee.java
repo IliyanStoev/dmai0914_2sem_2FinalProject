@@ -26,7 +26,7 @@ public class DbEmployee {
 			
 			res = ps.executeUpdate();
 			
-			if (res != -1) {
+			if (res != -1 && emp.getEv() != null) {
 				DbEvent dbEv = new DbEvent();
 				
 				res = dbEv.insertEmpEvent(emp.getEv(), emp);
@@ -45,7 +45,7 @@ public class DbEmployee {
 	}
 	
 	public ArrayList<Employee> getAllEmployees(){
-        return miscWhere("", false);
+        return miscWhere("", true);
     }
 	
 	public int updateEmployee(Employee emp) {

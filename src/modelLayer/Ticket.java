@@ -7,7 +7,7 @@ public class Ticket {
 	
 	public Ticket(String barcode, TicketType tt) {
 		this.barcode = barcode;
-		this.tt = tt;
+		this.tt = tt;;
 	}
 	
 	public Ticket() {

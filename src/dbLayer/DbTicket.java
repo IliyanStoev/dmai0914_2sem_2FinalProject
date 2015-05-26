@@ -35,27 +35,6 @@ public class DbTicket {
 		Ticket t = this.singleWhere(w, true);
 		return t;
 	}
-	
-	/*public ArrayList<Event> getAllEvents(){
-        return miscWhere("", false);
-    }
-	
-		public int updateEvent(Event ev) {
-			int res = -1;
-			if( ev != null ) {
-				String q = "update event set "
-						+ "name='" + ev.getName() + "', "
-							     + "description='" + ev.getDescription() + "', "
-							     	+ "budget = '" + ev.getBudget() + "' "
-						+ "where eid = '" + ev.getEid() + "'";
-				try(Statement s = DbConnection.getInstance().getDBcon().createStatement()) {
-					res = s.executeUpdate(q);
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-			}
-			return res;
-	}*/
 		
 	public int removeTickets(Booking book) {
 		int res = -1;
@@ -141,15 +120,15 @@ public class DbTicket {
 		Random rand = new Random();
 		int nr = rand.nextInt(10000)+1000;
  		String barcode = evName.substring(0, 2) + nr;
- 		
- 		//TicketCtr tCtr = new TicketCtr();
+
  		Ticket t = findTicket(barcode);
+
 		if( t == null ) {
-			System.out.println("if = true");
+			//System.out.println("if = true");
 			return barcode;
 		}
 		else {
-			System.out.println("if = false");
+			//System.out.println("if = false");
 			generateBarcode(evName);
 			return null;
 		}
