@@ -15,12 +15,12 @@ import modelLayer.TicketType;
 public class DbTicket {
 
 	public int insertTicket(Ticket t) {
-		String q = "INSERT INTO ticket (barcode, ttid) values (?, ?)";
+		String q = "INSERT INTO ticket (barcode, bid) values (?, ?)";
 		int res = -1;
 		try(PreparedStatement ps = DbConnection.getInstance().getDBcon().prepareStatement(q)
 		){			
 			ps.setString(1, t.getBarcode());
-			ps.setInt(2, t.getTt().getTtId());
+			ps.setInt(2, t.getBook().getB_id());
 			
 			res = ps.executeUpdate();
 			
@@ -38,8 +38,8 @@ public class DbTicket {
 		
 	public int removeTickets(Booking book) {
 		int res = -1;
-		try(PreparedStatement ps = DbConnection.getInstance().getDBcon().prepareStatement("delete from ticket where ttid = ?")) {
-			ps.setInt(1, book.getTt().getTtId());
+		try(PreparedStatement ps = DbConnection.getInstance().getDBcon().prepareStatement("delete from ticket where bid = ?")) {
+			ps.setInt(1, book.getB_id());
 			res = ps.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -60,7 +60,7 @@ public class DbTicket {
 		try {
 			t = new Ticket();
 			t.setBarcode(rs.getString("barcode"));
-			t.setTt(new TicketType(rs.getInt("ttid")));
+			t.setBook(new Booking(rs.getInt("bid")));
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -87,10 +87,10 @@ public class DbTicket {
 				t = buildTicket(rs);
 				
 					if(retrieveAssociation) {
-						DbTicketType dbTt = new DbTicketType();
-						int ttid = t.getTt().getTtId();
-                        TicketType tt = dbTt.singleWhere(" ttid = '" + ttid + "'", false);
-                        t.setTt(tt);
+						DbBooking dbBook = new DbBooking();
+						int bid = t.getBook().getB_id();
+                        Booking book = dbBook.singleWhere(" bid = '" + bid + "'", false);
+                        t.setBook(book);
 					}
 				res.add(t);
 			}

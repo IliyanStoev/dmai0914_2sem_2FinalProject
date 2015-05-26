@@ -3,11 +3,11 @@ package modelLayer;
 public class Ticket {
 
 	private String barcode;
-	private TicketType tt;
+	private Booking book;
 	
-	public Ticket(String barcode, TicketType tt) {
+	public Ticket(String barcode, Booking book) {
 		this.barcode = barcode;
-		this.tt = tt;;
+		this.book = book;;
 	}
 	
 	public Ticket() {
@@ -22,12 +22,25 @@ public class Ticket {
 		this.barcode = barcode;
 	}
 
-	public TicketType getTt() {
+	/*public TicketType getTt() {
 		return tt;
 	}
 
 	public void setTt(TicketType tt) {
 		this.tt = tt;
 	}
+	*/
+	
+	public Booking getBook() { 
+		return book;
+	}
+	
+	public void setBook(Booking book) {
+		
+		this.book = book;
+	}
+
+	
+	
 	
 }
