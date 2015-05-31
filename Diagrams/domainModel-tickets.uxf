@@ -4,8 +4,8 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>384</x>
-      <y>184</y>
+      <x>440</x>
+      <y>176</y>
       <w>128</w>
       <h>136</h>
     </coordinates>
@@ -27,8 +27,8 @@ company
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>384</x>
-      <y>432</y>
+      <x>440</x>
+      <y>424</y>
       <w>128</w>
       <h>136</h>
     </coordinates>
@@ -49,7 +49,7 @@ isPaid</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>696</x>
-      <y>760</y>
+      <y>656</y>
       <w>136</w>
       <h>88</h>
     </coordinates>
@@ -62,22 +62,22 @@ barcode
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>488</x>
-      <y>456</y>
-      <w>424</w>
+      <x>544</x>
+      <y>448</y>
+      <w>168</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1
 </panel_attributes>
-    <additional_attributes>24;24;408;24</additional_attributes>
+    <additional_attributes>24;24;152;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>400</x>
-      <y>296</y>
+      <x>456</x>
+      <y>288</y>
       <w>86</w>
       <h>152</h>
     </coordinates>
@@ -92,8 +92,8 @@ makes&gt;
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>896</x>
-      <y>432</y>
+      <x>696</x>
+      <y>424</y>
       <w>136</w>
       <h>88</h>
     </coordinates>
@@ -108,8 +108,8 @@ inStock</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>896</x>
-      <y>208</y>
+      <x>696</x>
+      <y>200</y>
       <w>136</w>
       <h>96</h>
     </coordinates>
@@ -125,8 +125,8 @@ evManager</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1320</x>
-      <y>208</y>
+      <x>920</x>
+      <y>200</y>
       <w>136</w>
       <h>88</h>
     </coordinates>
@@ -141,21 +141,21 @@ bookingsNo
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>488</x>
-      <y>544</y>
-      <w>224</w>
-      <h>232</h>
+      <x>544</x>
+      <y>536</y>
+      <w>240</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>24;24;208;216</additional_attributes>
+    <additional_attributes>24;24;224;120</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>944</x>
-      <y>280</y>
+      <x>744</x>
+      <y>272</y>
       <w>40</w>
       <h>168</h>
     </coordinates>
@@ -167,21 +167,21 @@ m2=1..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>424</x>
-      <y>544</y>
+      <x>480</x>
+      <y>536</y>
       <w>40</w>
-      <h>232</h>
+      <h>136</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1</panel_attributes>
-    <additional_attributes>24;24;24;216</additional_attributes>
+    <additional_attributes>24;24;24;120</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>384</x>
-      <y>760</y>
+      <x>440</x>
+      <y>656</y>
       <w>128</w>
       <h>88</h>
     </coordinates>
@@ -197,27 +197,27 @@ amount</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1008</x>
-      <y>224</y>
-      <w>328</w>
+      <x>808</x>
+      <y>216</y>
+      <w>128</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 m1=   1
 m2=  1</panel_attributes>
-    <additional_attributes>312;24;24;24</additional_attributes>
+    <additional_attributes>112;24;24;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>488</x>
-      <y>224</y>
-      <w>424</w>
+      <x>544</x>
+      <y>216</y>
+      <w>168</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..*
 m2=1..*</panel_attributes>
-    <additional_attributes>24;24;408;24</additional_attributes>
+    <additional_attributes>24;24;152;24</additional_attributes>
   </element>
 </diagram>
