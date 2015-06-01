@@ -36,9 +36,9 @@ foreign key (eid) references event(eid));
 
 
 create table ticket ( 
-barcode bigint not null primary key(barcode),
-ttid int,
-foreign key (ttid) references ticketType(ttid));
+barcode varchar(60) primary key(barcode),
+bid int,
+foreign key (bid) references booking(bid));
 
 
 create table receipt ( 
