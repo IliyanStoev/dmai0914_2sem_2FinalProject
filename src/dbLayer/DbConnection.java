@@ -7,13 +7,13 @@ import java.sql.DriverManager;
 	public class DbConnection
 	{   //Constants used to get access to the database
 		//SQL Server
-	   //private static final String  driver = "jdbc:sqlserver://kraka.ucn.dk:1433";
-	   private static final String  driver = "jdbc:sqlserver://localhost:1433";
-	   private static final String  databaseName = ";databaseName=TicketingConsole";
-	   //private static final String  databaseName = ";databaseName=dmai0914_2Sem_2";
+	   private static final String  driver = "jdbc:sqlserver://kraka.ucn.dk:1433";
+	   //private static final String  driver = "jdbc:sqlserver://localhost:1433";
+	   //private static final String  databaseName = ";databaseName=TicketingConsole";
+	   private static final String  databaseName = ";databaseName=dmai0914_2Sem_2";
 	    //SQL Server
-	    private static String  userName = "; user=sa";
-	    private static String password = ";password=masterkey";
+	    private static String  userName = "; user=dmai0914_2sem_2";
+	    private static String password = ";password=IsAllowed";
 	  
 	    private DatabaseMetaData dma;
 	    private static Connection con;

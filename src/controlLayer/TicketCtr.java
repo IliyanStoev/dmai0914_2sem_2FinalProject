@@ -2,6 +2,7 @@ package controlLayer;
 
 import java.util.Random;
 
+import modelLayer.Booking;
 import modelLayer.Ticket;
 import modelLayer.TicketType;
 import dbLayer.DbConnection;
@@ -9,10 +10,10 @@ import dbLayer.DbTicket;
 
 public class TicketCtr {
 
-	public int insertTicket(String barcode, TicketType tt) throws Exception{
+	public int insertTicket(String barcode, Booking book) throws Exception{
 		Ticket t = new Ticket();
 		t.setBarcode(barcode);
-		t.setTt(tt);
+		t.setBook(book);
 		int res = -1;
 		
 		try{

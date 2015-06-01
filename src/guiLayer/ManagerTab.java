@@ -336,8 +336,13 @@ public class ManagerTab extends JPanel {
 		String cpr = rcprTF.getText();
 		boolean  isManager = chckbxIsManager.isSelected();
 		String company = rcompanyCB.getSelectedItem().toString();
-		Event ev = evCtr.findEvent(rprojectCB.getSelectedItem().toString());
+		Event ev = null;
+		if(rprojectCB.getSelectedIndex()!=-1) { 
+			
+		ev = evCtr.findEvent(rprojectCB.getSelectedItem().toString());
+		}
 		int res = -1;
+		
 		
 		EmployeeCtr empCtr = new EmployeeCtr();
 		try {
@@ -353,7 +358,8 @@ public class ManagerTab extends JPanel {
 		else {
 			JOptionPane.showMessageDialog(null, "An error occured. \nThe employee was not inserted. \n Please try again");
 		}
-	}
+		}
+	
 	
 	private void removeEmployee() {
 		EmployeeCtr empCtr = new EmployeeCtr();

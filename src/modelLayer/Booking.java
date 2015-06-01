@@ -21,6 +21,10 @@ public class Booking {
 		
 	}
 
+	public Booking(int b_id) {
+		this.b_id = b_id;
+	}
+
 	public int getB_id() {
 		return b_id;
 	}

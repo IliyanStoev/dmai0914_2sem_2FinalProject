@@ -42,7 +42,7 @@ public class DbBooking {
 			for(int i=0; i<book.getQuantity(); i++) {
 				if(res != -1) {
 					Ticket t = dbT.generateTicket(book.getTt().getEv().getName());
-					t.setTt(book.getTt());
+					t.setBook(new Booking(book.getB_id()));
 					res = dbT.insertTicket(t);
 				}
 			}
@@ -113,7 +113,7 @@ public class DbBooking {
 		return book;
 	}
 	
-	private Booking singleWhere(String where, boolean retrieveAssociation) {
+	public Booking singleWhere(String where, boolean retrieveAssociation) {
 		List<Booking> res = miscWhere(where, retrieveAssociation);
 		if(res.size() > 0) {
 			return res.get(0);
