@@ -211,40 +211,6 @@
     <additional_attributes>24;24;24;80</additional_attributes>
   </element>
   <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>1152</x>
-      <y>216</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>ticketsSold</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>1232</x>
-      <y>216</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>bookingNo</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>1312</x>
-      <y>216</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>eid
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>216</x>
@@ -287,28 +253,6 @@
     </coordinates>
     <panel_attributes>*Booking*</panel_attributes>
     <additional_attributes>104;40;24;40</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>1128</x>
-      <y>168</y>
-      <w>128</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>*Statistics*</panel_attributes>
-    <additional_attributes>112;40;24;40</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1328</x>
-      <y>224</y>
-      <w>56</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -422,17 +366,6 @@
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>1056</x>
-      <y>424</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>receiptNo</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
       <x>992</x>
@@ -446,35 +379,35 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1072</x>
-      <y>424</y>
+      <x>760</x>
+      <y>520</y>
       <w>40</w>
-      <h>160</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>24;144;24;24</additional_attributes>
+    <additional_attributes>24;72;24;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>520</x>
-      <y>544</y>
-      <w>592</w>
+      <x>320</x>
+      <y>568</y>
+      <w>480</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>24;24;576;24</additional_attributes>
+    <additional_attributes>464;24;24;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>520</x>
-      <y>520</y>
+      <x>320</x>
+      <y>424</y>
       <w>40</w>
-      <h>64</h>
+      <h>184</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;48</additional_attributes>
+    <additional_attributes>24;24;24;168</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -499,39 +432,6 @@
     <additional_attributes>24;24;240;24</additional_attributes>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>1328</x>
-      <y>216</y>
-      <w>40</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>24;24;24;48</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>656</x>
-      <y>240</y>
-      <w>712</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>24;24;696;24</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>656</x>
-      <y>216</y>
-      <w>40</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;48</additional_attributes>
-  </element>
-  <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>776</x>
@@ -552,17 +452,6 @@
     </coordinates>
     <panel_attributes>isManager</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1064</x>
-      <y>432</y>
-      <w>72</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -623,7 +512,7 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>312</x>
+      <x>304</x>
       <y>424</y>
       <w>40</w>
       <h>288</h>
@@ -982,13 +871,13 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>312</x>
+      <x>304</x>
       <y>672</y>
-      <w>920</w>
+      <w>928</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>24;24;904;24</additional_attributes>
+    <additional_attributes>24;24;912;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -1000,5 +889,27 @@
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>24;48;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>744</x>
+      <y>520</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>bid</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>528</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
   </element>
 </diagram>
